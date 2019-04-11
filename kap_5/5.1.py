@@ -53,9 +53,14 @@ if kön == Jesper_Jansson[0] and hårfärg == Jesper_Jansson[1] and ögonfärg =
     matchlista.append("Jesper Jansson")
     matchar = True
 
+antal_matchningar = len(matchlista) # antalet_matchningar
+
 if matchar == True:
-    for kändis in matchlista:
+    print("Du matchar med:")
+    for antal in range(0, antal_matchningar): #för varje matchning med början på [0] i listan med matchningar
         # skriver ut varje matchning om egenskaperna matchar med någon
-        print("Dina egenskaper matchar med: " + kändis)
+        
+        print(matchlista[antal])
+    
 else:
     print("Dina egenskaper matchar inte med någon person i programmet")
